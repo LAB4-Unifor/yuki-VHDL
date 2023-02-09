@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity SineWaveGenerator is
 	port (
 		clk, rst: in std_logic;
-		set_clock: in std_logic_vector(7 downto 0);
+		set_clock: in std_logic_vector(11 downto 0);
 		sin,not_sin: out std_logic
 	);
 end SineWavegenerator;
@@ -46,8 +46,9 @@ architecture threePWM of SineWaveGenerator is
 		port(
 			i_clk         : in  std_logic;
 			i_rst         : in  std_logic;
-			i_clk_divider : in  std_logic_vector(7 downto 0);
-			o_clk         : out std_logic);
+			i_clk_divider : in  std_logic_vector(11 downto 0);
+			o_clk         : out std_logic
+			);
 	
 	end component divisor_de_clock;
 	
@@ -66,14 +67,18 @@ architecture threePWM of SineWaveGenerator is
 	end component NotGate;
 	
 	
-	signal divisor_out,atraso_enable,sin_2 : std_logic;
-	signal contador_1, contador_2,contador_3,moduladora_1,moduladora_2,triangular_out : std_logic_vector (7 downto 0);
+	signal divisor_to_portadora,divisor_to_mod,atraso_enable,mod_atrasada : std_logic;
+	
+	signal contador_mod, contador_not_mod,contador_port,moduladora_out,not_moduladora,triangular_out : std_logic_vector (7 downto 0);
 	
 	begin
 		
 		--Divisor de Clock
-		div_1 : divisor_de_clock 
-			port map(clk,rst,set_clock,divisor_out);
+		divisor_portadora : divisor_de_clock
+			port map (clk,rst,"000000001101",divisor_to_portadora);
+			
+		divisor_moduladora : divisor_de_clock
+			port map (clk,rst,set_clock,divisor_to_mod);	
 		
 		-- Atraso
 		at : Atraso
@@ -81,38 +86,38 @@ architecture threePWM of SineWaveGenerator is
 		
 		-- contadores
 		
-		ct_1 : contador
-			port map(divisor_out,rst,contador_1);
+		ct_mod : contador
+			port map(divisor_to_mod,rst,contador_mod);
 		
-		ct_2 : contador
-			port map(divisor_out,atraso_enable,contador_2);
+		ct_not_mod : contador
+			port map(divisor_to_mod,atraso_enable,contador_not_mod);
 			
-		ct_3 : contador --contador da triangular
-			port map(clk,rst,contador_3);
+		ct_port : contador --contador da triangular
+			port map(divisor_to_portadora,rst,contador_port);
 		
 		--triangular
 		tri : portadora
-			port map(contador_3,triangular_out);
+			port map(contador_port,triangular_out);
 			
 		--senoidal
 
-		senoidal_1 : SineWave
-			port map(contador_1,moduladora_1);
+		pwm : SineWave
+			port map(contador_mod,moduladora_out);
 		
-		senoidal_2 : SineWave
-			port map(contador_2,moduladora_2);
+		not_pwm : SineWave
+			port map(contador_not_mod,not_moduladora);
 	
 		
 		-- comparadores
 		comp_1 : comparador
-			port map(moduladora_1,triangular_out,sin);
+			port map(moduladora_out,triangular_out,sin);
 			
 		comp_2 : comparador
-			port map(moduladora_2,triangular_out,sin_2);
+			port map(not_moduladora,triangular_out,mod_atrasada);
 		
 		--inversor
 		nGate : NotGate
-			port map (sin_2,not_sin);
+			port map (mod_atrasada,not_sin);
 
 
 end threePWM;

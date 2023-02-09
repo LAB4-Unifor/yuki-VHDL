@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SineWaveGenerator
-Fri Feb 03 17:22:24 2023
+Thu Feb 09 15:50:22 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -16,11 +16,12 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "contador:ct_3"
- 12. Port Connectivity Checks: "contador:ct_2"
- 13. Port Connectivity Checks: "contador:ct_1"
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "contador:ct_port"
+ 12. Port Connectivity Checks: "contador:ct_not_mod"
+ 13. Port Connectivity Checks: "contador:ct_mod"
+ 14. Port Connectivity Checks: "divisor_de_clock:divisor_portadora"
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +47,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 03 17:22:24 2023      ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 09 15:50:22 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; SineWaveGenerator                          ;
 ; Top-level Entity Name              ; SineWaveGenerator                          ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 355                                        ;
-;     Total combinational functions  ; 348                                        ;
-;     Dedicated logic registers      ; 57                                         ;
-; Total registers                    ; 57                                         ;
-; Total pins                         ; 12                                         ;
+; Total logic elements               ; 393                                        ;
+;     Total combinational functions  ; 381                                        ;
+;     Dedicated logic registers      ; 83                                         ;
+; Total registers                    ; 83                                         ;
+; Total pins                         ; 16                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -68,7 +69,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP3C40F324C7       ;                    ;
+; Device                                                                     ; EP3C16F484C6       ;                    ;
 ; Top-level entity name                                                      ; SineWaveGenerator  ; SineWaveGenerator  ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -161,80 +162,85 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------+---------+
-; SineWaveGenerator.vhd            ; yes             ; User VHDL File        ; D:/GithupRepo/GEPER/PWM_INVERSOR_CONTROLLER/SineWaveGenerator.vhd ;         ;
-; divisor_de_clock.vhd             ; yes             ; Auto-Found VHDL File  ; D:/GithupRepo/GEPER/PWM_INVERSOR_CONTROLLER/divisor_de_clock.vhd  ;         ;
-; atraso.vhd                       ; yes             ; Auto-Found VHDL File  ; D:/GithupRepo/GEPER/PWM_INVERSOR_CONTROLLER/atraso.vhd            ;         ;
-; contador.vhd                     ; yes             ; Auto-Found VHDL File  ; D:/GithupRepo/GEPER/PWM_INVERSOR_CONTROLLER/contador.vhd          ;         ;
-; portadora.vhd                    ; yes             ; Auto-Found VHDL File  ; D:/GithupRepo/GEPER/PWM_INVERSOR_CONTROLLER/portadora.vhd         ;         ;
-; sinewave.vhd                     ; yes             ; Auto-Found VHDL File  ; D:/GithupRepo/GEPER/PWM_INVERSOR_CONTROLLER/sinewave.vhd          ;         ;
-; comparador.vhd                   ; yes             ; Auto-Found VHDL File  ; D:/GithupRepo/GEPER/PWM_INVERSOR_CONTROLLER/comparador.vhd        ;         ;
-; notgate.vhd                      ; yes             ; Auto-Found VHDL File  ; D:/GithupRepo/GEPER/PWM_INVERSOR_CONTROLLER/notgate.vhd           ;         ;
-+----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                             ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
+; SineWaveGenerator.vhd            ; yes             ; User VHDL File        ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/SineWaveGenerator.vhd ;         ;
+; divisor_de_clock.vhd             ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/divisor_de_clock.vhd  ;         ;
+; atraso.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/atraso.vhd            ;         ;
+; contador.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/contador.vhd          ;         ;
+; portadora.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/portadora.vhd         ;         ;
+; sinewave.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/sinewave.vhd          ;         ;
+; comparador.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/comparador.vhd        ;         ;
+; notgate.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/notgate.vhd           ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 355                     ;
-;                                             ;                         ;
-; Total combinational functions               ; 348                     ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 252                     ;
-;     -- 3 input functions                    ; 37                      ;
-;     -- <=2 input functions                  ; 59                      ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 290                     ;
-;     -- arithmetic mode                      ; 58                      ;
-;                                             ;                         ;
-; Total registers                             ; 57                      ;
-;     -- Dedicated logic registers            ; 57                      ;
-;     -- I/O registers                        ; 0                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 12                      ;
-; Embedded Multiplier 9-bit elements          ; 0                       ;
-; Maximum fan-out node                        ; contador:ct_1|q_temp[6] ;
-; Maximum fan-out                             ; 63                      ;
-; Total fan-out                               ; 1418                    ;
-; Average fan-out                             ; 3.31                    ;
-+---------------------------------------------+-------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 393       ;
+;                                             ;           ;
+; Total combinational functions               ; 381       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 261       ;
+;     -- 3 input functions                    ; 40        ;
+;     -- <=2 input functions                  ; 80        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 300       ;
+;     -- arithmetic mode                      ; 81        ;
+;                                             ;           ;
+; Total registers                             ; 83        ;
+;     -- Dedicated logic registers            ; 83        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 16        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 66        ;
+; Total fan-out                               ; 1601      ;
+; Average fan-out                             ; 3.23      ;
++---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
-; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
-; |SineWaveGenerator          ; 348 (0)           ; 57 (0)       ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |SineWaveGenerator                        ; work         ;
-;    |Atraso:at|              ; 10 (10)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|Atraso:at              ; work         ;
-;    |SineWave:senoidal_1|    ; 130 (130)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|SineWave:senoidal_1    ; work         ;
-;    |SineWave:senoidal_2|    ; 130 (130)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|SineWave:senoidal_2    ; work         ;
-;    |comparador:comp_1|      ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|comparador:comp_1      ; work         ;
-;    |comparador:comp_2|      ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|comparador:comp_2      ; work         ;
-;    |contador:ct_1|          ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|contador:ct_1          ; work         ;
-;    |contador:ct_2|          ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|contador:ct_2          ; work         ;
-;    |contador:ct_3|          ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|contador:ct_3          ; work         ;
-;    |divisor_de_clock:div_1| ; 31 (31)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|divisor_de_clock:div_1 ; work         ;
-;    |portadora:tri|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|portadora:tri          ; work         ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
+; |SineWaveGenerator                       ; 381 (0)           ; 83 (0)       ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |SineWaveGenerator                                     ; work         ;
+;    |Atraso:at|                           ; 10 (10)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|Atraso:at                           ; work         ;
+;    |SineWave:not_pwm|                    ; 130 (130)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|SineWave:not_pwm                    ; work         ;
+;    |SineWave:pwm|                        ; 130 (130)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|SineWave:pwm                        ; work         ;
+;    |comparador:comp_1|                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|comparador:comp_1                   ; work         ;
+;    |comparador:comp_2|                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|comparador:comp_2                   ; work         ;
+;    |contador:ct_mod|                     ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|contador:ct_mod                     ; work         ;
+;    |contador:ct_not_mod|                 ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|contador:ct_not_mod                 ; work         ;
+;    |contador:ct_port|                    ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|contador:ct_port                    ; work         ;
+;    |divisor_de_clock:divisor_moduladora| ; 45 (45)           ; 36 (36)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|divisor_de_clock:divisor_moduladora ; work         ;
+;    |divisor_de_clock:divisor_portadora|  ; 19 (19)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|divisor_de_clock:divisor_portadora  ; work         ;
+;    |portadora:tri|                       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|portadora:tri                       ; work         ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                    ;
-+----------------------------------------------+----------------------------------------+
-; Register name                                ; Reason for Removal                     ;
-+----------------------------------------------+----------------------------------------+
-; divisor_de_clock:div_1|r_clk_divider_half[7] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1        ;                                        ;
-+----------------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                               ;
++----------------------------------------------------------------+-----------------------------------------------------------------+
+; Register name                                                  ; Reason for Removal                                              ;
++----------------------------------------------------------------+-----------------------------------------------------------------+
+; divisor_de_clock:divisor_moduladora|r_clk_divider_half[11]     ; Stuck at GND due to stuck port data_in                          ;
+; divisor_de_clock:divisor_portadora|r_clk_divider_half[0,3..11] ; Stuck at GND due to stuck port data_in                          ;
+; divisor_de_clock:divisor_portadora|r_clk_divider[0,1,4..11]    ; Stuck at GND due to stuck port data_in                          ;
+; divisor_de_clock:divisor_portadora|r_clk_divider[3]            ; Merged with divisor_de_clock:divisor_portadora|r_clk_divider[2] ;
+; divisor_de_clock:divisor_portadora|r_clk_divider_half[1,2]     ; Merged with divisor_de_clock:divisor_portadora|r_clk_divider[2] ;
+; Total Number of Removed Registers = 24                         ;                                                                 ;
++----------------------------------------------------------------+-----------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -242,28 +248,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 57    ;
-; Number of registers using Synchronous Clear  ; 8     ;
+; Total registers                              ; 83    ;
+; Number of registers using Synchronous Clear  ; 24    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 48    ;
+; Number of registers using Asynchronous Clear ; 74    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 7     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |SineWaveGenerator|divisor_de_clock:div_1|r_clk_counter[7] ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |SineWaveGenerator|portadora:tri|wave[7]                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |SineWaveGenerator|divisor_de_clock:divisor_moduladora|r_clk_counter[4] ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |SineWaveGenerator|divisor_de_clock:divisor_portadora|r_clk_counter[3]  ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |SineWaveGenerator|portadora:tri|wave[6]                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador:ct_3"                                                                                                                               ;
+; Port Connectivity Checks: "contador:ct_port"                                                                                                                            ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                      ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -272,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador:ct_2"                                                                                                                               ;
+; Port Connectivity Checks: "contador:ct_not_mod"                                                                                                                         ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                      ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -281,12 +288,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "contador:ct_1"                                                                                                                               ;
+; Port Connectivity Checks: "contador:ct_mod"                                                                                                                             ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                      ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; delay ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "divisor_de_clock:divisor_portadora" ;
++----------------------+-------+----------+----------------------+
+; Port                 ; Type  ; Severity ; Details              ;
++----------------------+-------+----------+----------------------+
+; i_clk_divider[3..2]  ; Input ; Info     ; Stuck at VCC         ;
+; i_clk_divider[11..4] ; Input ; Info     ; Stuck at GND         ;
+; i_clk_divider[1]     ; Input ; Info     ; Stuck at GND         ;
+; i_clk_divider[0]     ; Input ; Info     ; Stuck at VCC         ;
++----------------------+-------+----------+----------------------+
 
 
 +-------------------------------+
@@ -294,7 +313,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -304,7 +323,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Feb 03 17:22:20 2023
+    Info: Processing started: Thu Feb 09 15:50:17 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SineWaveGenerator -c SineWaveGenerator
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file sinewavegenerator.vhd
@@ -314,7 +333,7 @@ Info (12127): Elaborating entity "SineWaveGenerator" for the top level hierarchy
 Warning (12125): Using design file divisor_de_clock.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: divisor_de_clock-rtl
     Info (12023): Found entity 1: divisor_de_clock
-Info (12128): Elaborating entity "divisor_de_clock" for hierarchy "divisor_de_clock:div_1"
+Info (12128): Elaborating entity "divisor_de_clock" for hierarchy "divisor_de_clock:divisor_portadora"
 Warning (12125): Using design file atraso.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Atraso-atraso_comp
     Info (12023): Found entity 1: Atraso
@@ -322,7 +341,7 @@ Info (12128): Elaborating entity "Atraso" for hierarchy "Atraso:at"
 Warning (12125): Using design file contador.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: contador-ctt
     Info (12023): Found entity 1: contador
-Info (12128): Elaborating entity "contador" for hierarchy "contador:ct_1"
+Info (12128): Elaborating entity "contador" for hierarchy "contador:ct_mod"
 Warning (12125): Using design file portadora.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: portadora-ondaTriangular
     Info (12023): Found entity 1: portadora
@@ -330,7 +349,7 @@ Info (12128): Elaborating entity "portadora" for hierarchy "portadora:tri"
 Warning (12125): Using design file sinewave.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: SineWave-ondaSenoidal
     Info (12023): Found entity 1: SineWave
-Info (12128): Elaborating entity "SineWave" for hierarchy "SineWave:senoidal_1"
+Info (12128): Elaborating entity "SineWave" for hierarchy "SineWave:pwm"
 Warning (12125): Using design file comparador.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: comparador-comp
     Info (12023): Found entity 1: comparador
@@ -343,14 +362,14 @@ Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 368 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
+Info (21057): Implemented 410 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
     Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 356 logic cells
+    Info (21061): Implemented 394 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4676 megabytes
-    Info: Processing ended: Fri Feb 03 17:22:24 2023
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4657 megabytes
+    Info: Processing ended: Thu Feb 09 15:50:22 2023
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 
