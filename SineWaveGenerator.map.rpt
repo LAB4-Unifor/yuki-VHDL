@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SineWaveGenerator
-Thu Feb 09 15:50:22 2023
+Tue Feb 14 16:05:38 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -19,9 +19,10 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  11. Port Connectivity Checks: "contador:ct_port"
  12. Port Connectivity Checks: "contador:ct_not_mod"
  13. Port Connectivity Checks: "contador:ct_mod"
- 14. Port Connectivity Checks: "divisor_de_clock:divisor_portadora"
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 14. Port Connectivity Checks: "divisor_de_clock:divisor_moduladora"
+ 15. Port Connectivity Checks: "divisor_de_clock:divisor_portadora"
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -47,15 +48,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 09 15:50:22 2023      ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 14 16:05:37 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; SineWaveGenerator                          ;
 ; Top-level Entity Name              ; SineWaveGenerator                          ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 393                                        ;
-;     Total combinational functions  ; 381                                        ;
-;     Dedicated logic registers      ; 83                                         ;
-; Total registers                    ; 83                                         ;
+; Total logic elements               ; 358                                        ;
+;     Total combinational functions  ; 357                                        ;
+;     Dedicated logic registers      ; 60                                         ;
+; Total registers                    ; 60                                         ;
 ; Total pins                         ; 16                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -167,7 +168,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                             ; Library ;
 +----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
-; SineWaveGenerator.vhd            ; yes             ; User VHDL File        ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/SineWaveGenerator.vhd ;         ;
+; sinewavegenerator.vhd            ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/sinewavegenerator.vhd ;         ;
 ; divisor_de_clock.vhd             ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/divisor_de_clock.vhd  ;         ;
 ; atraso.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/atraso.vhd            ;         ;
 ; contador.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/contador.vhd          ;         ;
@@ -178,34 +179,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 393       ;
-;                                             ;           ;
-; Total combinational functions               ; 381       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 261       ;
-;     -- 3 input functions                    ; 40        ;
-;     -- <=2 input functions                  ; 80        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 300       ;
-;     -- arithmetic mode                      ; 81        ;
-;                                             ;           ;
-; Total registers                             ; 83        ;
-;     -- Dedicated logic registers            ; 83        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 16        ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 66        ;
-; Total fan-out                               ; 1601      ;
-; Average fan-out                             ; 3.23      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++---------------------------------------------+---------------------------+
+; Resource                                    ; Usage                     ;
++---------------------------------------------+---------------------------+
+; Estimated Total logic elements              ; 358                       ;
+;                                             ;                           ;
+; Total combinational functions               ; 357                       ;
+; Logic element usage by number of LUT inputs ;                           ;
+;     -- 4 input functions                    ; 260                       ;
+;     -- 3 input functions                    ; 31                        ;
+;     -- <=2 input functions                  ; 66                        ;
+;                                             ;                           ;
+; Logic elements by mode                      ;                           ;
+;     -- normal mode                          ; 297                       ;
+;     -- arithmetic mode                      ; 60                        ;
+;                                             ;                           ;
+; Total registers                             ; 60                        ;
+;     -- Dedicated logic registers            ; 60                        ;
+;     -- I/O registers                        ; 0                         ;
+;                                             ;                           ;
+; I/O pins                                    ; 16                        ;
+; Embedded Multiplier 9-bit elements          ; 0                         ;
+; Maximum fan-out node                        ; contador:ct_mod|q_temp[6] ;
+; Maximum fan-out                             ; 63                        ;
+; Total fan-out                               ; 1475                      ;
+; Average fan-out                             ; 3.29                      ;
++---------------------------------------------+---------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -213,7 +214,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Library Name ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
-; |SineWaveGenerator                       ; 381 (0)           ; 83 (0)       ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |SineWaveGenerator                                     ; work         ;
+; |SineWaveGenerator                       ; 357 (0)           ; 60 (0)       ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |SineWaveGenerator                                     ; work         ;
 ;    |Atraso:at|                           ; 10 (10)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|Atraso:at                           ; work         ;
 ;    |SineWave:not_pwm|                    ; 130 (130)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|SineWave:not_pwm                    ; work         ;
 ;    |SineWave:pwm|                        ; 130 (130)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|SineWave:pwm                        ; work         ;
@@ -222,25 +223,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |contador:ct_mod|                     ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|contador:ct_mod                     ; work         ;
 ;    |contador:ct_not_mod|                 ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|contador:ct_not_mod                 ; work         ;
 ;    |contador:ct_port|                    ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|contador:ct_port                    ; work         ;
-;    |divisor_de_clock:divisor_moduladora| ; 45 (45)           ; 36 (36)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|divisor_de_clock:divisor_moduladora ; work         ;
-;    |divisor_de_clock:divisor_portadora|  ; 19 (19)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|divisor_de_clock:divisor_portadora  ; work         ;
+;    |divisor_de_clock:divisor_moduladora| ; 21 (21)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|divisor_de_clock:divisor_moduladora ; work         ;
+;    |divisor_de_clock:divisor_portadora|  ; 19 (19)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|divisor_de_clock:divisor_portadora  ; work         ;
 ;    |portadora:tri|                       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SineWaveGenerator|portadora:tri                       ; work         ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                               ;
-+----------------------------------------------------------------+-----------------------------------------------------------------+
-; Register name                                                  ; Reason for Removal                                              ;
-+----------------------------------------------------------------+-----------------------------------------------------------------+
-; divisor_de_clock:divisor_moduladora|r_clk_divider_half[11]     ; Stuck at GND due to stuck port data_in                          ;
-; divisor_de_clock:divisor_portadora|r_clk_divider_half[0,3..11] ; Stuck at GND due to stuck port data_in                          ;
-; divisor_de_clock:divisor_portadora|r_clk_divider[0,1,4..11]    ; Stuck at GND due to stuck port data_in                          ;
-; divisor_de_clock:divisor_portadora|r_clk_divider[3]            ; Merged with divisor_de_clock:divisor_portadora|r_clk_divider[2] ;
-; divisor_de_clock:divisor_portadora|r_clk_divider_half[1,2]     ; Merged with divisor_de_clock:divisor_portadora|r_clk_divider[2] ;
-; Total Number of Removed Registers = 24                         ;                                                                 ;
-+----------------------------------------------------------------+-----------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                        ;
++-----------------------------------------------------------------------+-------------------------------------------------------------------+
+; Register name                                                         ; Reason for Removal                                                ;
++-----------------------------------------------------------------------+-------------------------------------------------------------------+
+; divisor_de_clock:divisor_moduladora|r_clk_divider_half[0,3,5..7,9,11] ; Stuck at GND due to stuck port data_in                            ;
+; divisor_de_clock:divisor_portadora|r_clk_divider_half[0,3..11]        ; Stuck at GND due to stuck port data_in                            ;
+; divisor_de_clock:divisor_moduladora|r_clk_divider[0,1,4,6..8,10]      ; Stuck at GND due to stuck port data_in                            ;
+; divisor_de_clock:divisor_portadora|r_clk_divider[0,1,4..11]           ; Stuck at GND due to stuck port data_in                            ;
+; divisor_de_clock:divisor_moduladora|r_clk_divider[2,3,5,9]            ; Merged with divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; divisor_de_clock:divisor_moduladora|r_clk_divider_half[1,2,4,8,10]    ; Merged with divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; divisor_de_clock:divisor_portadora|r_clk_divider[2,3]                 ; Merged with divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; divisor_de_clock:divisor_portadora|r_clk_divider_half[1,2]            ; Merged with divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; Total Number of Removed Registers = 47                                ;                                                                   ;
++-----------------------------------------------------------------------+-------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -248,10 +252,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 83    ;
+; Total registers                              ; 60    ;
 ; Number of registers using Synchronous Clear  ; 24    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 74    ;
+; Number of registers using Asynchronous Clear ; 51    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 7     ;
 ; Number of registers using Preset             ; 0     ;
@@ -296,6 +300,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "divisor_de_clock:divisor_moduladora" ;
++---------------------+-------+----------+------------------------+
+; Port                ; Type  ; Severity ; Details                ;
++---------------------+-------+----------+------------------------+
+; i_clk_divider[3..2] ; Input ; Info     ; Stuck at VCC           ;
+; i_clk_divider[8..6] ; Input ; Info     ; Stuck at GND           ;
+; i_clk_divider[11]   ; Input ; Info     ; Stuck at VCC           ;
+; i_clk_divider[10]   ; Input ; Info     ; Stuck at GND           ;
+; i_clk_divider[9]    ; Input ; Info     ; Stuck at VCC           ;
+; i_clk_divider[5]    ; Input ; Info     ; Stuck at VCC           ;
+; i_clk_divider[4]    ; Input ; Info     ; Stuck at GND           ;
+; i_clk_divider[1]    ; Input ; Info     ; Stuck at GND           ;
+; i_clk_divider[0]    ; Input ; Info     ; Stuck at VCC           ;
++---------------------+-------+----------+------------------------+
+
+
 +----------------------------------------------------------------+
 ; Port Connectivity Checks: "divisor_de_clock:divisor_portadora" ;
 +----------------------+-------+----------+----------------------+
@@ -313,7 +334,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -323,10 +344,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Feb 09 15:50:17 2023
+    Info: Processing started: Tue Feb 14 16:05:30 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SineWaveGenerator -c SineWaveGenerator
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file sinewavegenerator.vhd
+Warning (12125): Using design file sinewavegenerator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: SineWaveGenerator-threePWM
     Info (12023): Found entity 1: SineWaveGenerator
 Info (12127): Elaborating entity "SineWaveGenerator" for the top level hierarchy
@@ -362,14 +383,27 @@ Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 410 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "set_clock[0]"
+    Warning (15610): No output dependent on input pin "set_clock[1]"
+    Warning (15610): No output dependent on input pin "set_clock[2]"
+    Warning (15610): No output dependent on input pin "set_clock[3]"
+    Warning (15610): No output dependent on input pin "set_clock[4]"
+    Warning (15610): No output dependent on input pin "set_clock[5]"
+    Warning (15610): No output dependent on input pin "set_clock[6]"
+    Warning (15610): No output dependent on input pin "set_clock[7]"
+    Warning (15610): No output dependent on input pin "set_clock[8]"
+    Warning (15610): No output dependent on input pin "set_clock[9]"
+    Warning (15610): No output dependent on input pin "set_clock[10]"
+    Warning (15610): No output dependent on input pin "set_clock[11]"
+Info (21057): Implemented 375 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 394 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4657 megabytes
-    Info: Processing ended: Thu Feb 09 15:50:22 2023
-    Info: Elapsed time: 00:00:05
+    Info (21061): Implemented 359 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 4661 megabytes
+    Info: Processing ended: Tue Feb 14 16:05:38 2023
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:06
 
 

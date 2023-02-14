@@ -1,5 +1,5 @@
 EDA Netlist Writer report for SineWaveGenerator
-Thu Feb 09 16:11:02 2023
+Tue Feb 14 16:09:13 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Feb 09 16:11:02 2023 ;
+; EDA Netlist Writer Status ; Successful - Tue Feb 14 16:09:13 2023 ;
 ; Revision Name             ; SineWaveGenerator                     ;
 ; Top-level Entity Name     ; SineWaveGenerator                     ;
 ; Family                    ; Cyclone III                           ;
@@ -93,61 +93,13 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Thu Feb 09 16:11:01 2023
+    Info: Processing started: Tue Feb 14 16:09:12 2023
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
-Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
-Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
-Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
-Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
-Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
-Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
-Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
-Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
-Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
 Info (204019): Generated file SineWaveGenerator.vo in folder "C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim//" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 48 warnings
-    Info: Peak virtual memory: 4554 megabytes
-    Info: Processing ended: Thu Feb 09 16:11:02 2023
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4542 megabytes
+    Info: Processing ended: Tue Feb 14 16:09:13 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

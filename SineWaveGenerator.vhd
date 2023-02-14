@@ -78,7 +78,7 @@ architecture threePWM of SineWaveGenerator is
 			port map (clk,rst,"000000001101",divisor_to_portadora);
 			
 		divisor_moduladora : divisor_de_clock
-			port map (clk,rst,set_clock,divisor_to_mod);	
+			port map (clk,rst,"101000101101",divisor_to_mod);	
 		
 		-- Atraso
 		at : Atraso

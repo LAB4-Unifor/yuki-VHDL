@@ -25,7 +25,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 1000.0;
+	DATA_DURATION = 99000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
@@ -66,10 +66,40 @@ SIGNAL("set_clock")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 9;
+	WIDTH = 12;
 	LSB_INDEX = 0;
 	DIRECTION = INPUT;
 	PARENT = "";
+}
+
+SIGNAL("set_clock[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "set_clock";
+}
+
+SIGNAL("set_clock[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "set_clock";
+}
+
+SIGNAL("set_clock[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "set_clock";
 }
 
 SIGNAL("set_clock[8]")
@@ -179,9 +209,9 @@ TRANSITION_LIST("clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 1000;
-			LEVEL 0 FOR 0.5;
-			LEVEL 1 FOR 0.5;
+			REPEAT = 4950;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
 		}
 	}
 }
@@ -191,7 +221,8 @@ TRANSITION_LIST("not_sin")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 98001.0;
 	}
 }
 
@@ -200,7 +231,34 @@ TRANSITION_LIST("rst")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
+	}
+}
+
+TRANSITION_LIST("set_clock[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 99000.0;
+	}
+}
+
+TRANSITION_LIST("set_clock[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 99000.0;
+	}
+}
+
+TRANSITION_LIST("set_clock[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -209,7 +267,7 @@ TRANSITION_LIST("set_clock[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -218,7 +276,7 @@ TRANSITION_LIST("set_clock[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -227,7 +285,7 @@ TRANSITION_LIST("set_clock[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -236,7 +294,7 @@ TRANSITION_LIST("set_clock[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -245,7 +303,7 @@ TRANSITION_LIST("set_clock[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -254,7 +312,7 @@ TRANSITION_LIST("set_clock[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -263,7 +321,7 @@ TRANSITION_LIST("set_clock[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -272,7 +330,7 @@ TRANSITION_LIST("set_clock[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -281,7 +339,7 @@ TRANSITION_LIST("set_clock[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 99000.0;
 	}
 }
 
@@ -290,7 +348,8 @@ TRANSITION_LIST("sin")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 98001.0;
 	}
 }
 
@@ -324,16 +383,16 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "set_clock";
-	EXPAND_STATUS = EXPANDED;
+	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
-	CHILDREN = 4, 5, 6, 7, 8, 9, 10, 11, 12;
+	CHILDREN = 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "set_clock[8]";
+	CHANNEL = "set_clock[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -343,7 +402,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "set_clock[7]";
+	CHANNEL = "set_clock[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -353,7 +412,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "set_clock[6]";
+	CHANNEL = "set_clock[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -363,7 +422,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "set_clock[5]";
+	CHANNEL = "set_clock[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -373,7 +432,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "set_clock[4]";
+	CHANNEL = "set_clock[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -383,7 +442,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "set_clock[3]";
+	CHANNEL = "set_clock[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -393,7 +452,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "set_clock[2]";
+	CHANNEL = "set_clock[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -403,7 +462,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "set_clock[1]";
+	CHANNEL = "set_clock[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -413,7 +472,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "set_clock[0]";
+	CHANNEL = "set_clock[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -423,10 +482,40 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sin";
+	CHANNEL = "set_clock[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "set_clock[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "set_clock[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "sin";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
 	TREE_LEVEL = 0;
 }
 

@@ -1,5 +1,5 @@
 Flow report for SineWaveGenerator
-Thu Feb 09 16:11:02 2023
+Tue Feb 14 16:09:13 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Thu Feb 09 16:11:02 2023      ;
+; Flow Status                        ; Successful - Tue Feb 14 16:09:13 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; SineWaveGenerator                          ;
 ; Top-level Entity Name              ; SineWaveGenerator                          ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 383 / 15,408 ( 2 % )                       ;
-;     Total combinational functions  ; 382 / 15,408 ( 2 % )                       ;
-;     Dedicated logic registers      ; 83 / 15,408 ( < 1 % )                      ;
-; Total registers                    ; 83                                         ;
+; Total logic elements               ; 359 / 15,408 ( 2 % )                       ;
+;     Total combinational functions  ; 358 / 15,408 ( 2 % )                       ;
+;     Dedicated logic registers      ; 60 / 15,408 ( < 1 % )                      ;
+; Total registers                    ; 60                                         ;
 ; Total pins                         ; 16 / 347 ( 5 % )                           ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 516,096 ( 0 % )                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/09/2023 15:50:17 ;
+; Start date & time ; 02/14/2023 16:05:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SineWaveGenerator   ;
 +-------------------+---------------------+
@@ -75,20 +75,16 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                               ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+-------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 102021908304629.167596861714164                                                     ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 102021908304629.167640153102536                                                     ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                                  ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                         ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                           ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                                                                ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                  ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                   ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                                                                            ; --            ; --          ; Top            ;
-; PARTITION_COLOR                     ; 16764057                                                                            ; --            ; atraso      ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                               ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                               ; --            ; atraso      ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                                                              ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                                                              ; --            ; atraso      ; Top            ;
 +-------------------------------------+-------------------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
@@ -97,34 +93,18 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4646 MB             ; 00:00:05                           ;
-; Fitter                    ; 00:00:09     ; 1.0                     ; 4954 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4580 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4618 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4525 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4538 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 4653 MB             ; 00:00:06                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 4961 MB             ; 00:00:10                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4580 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4622 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4534 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4554 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:39     ; --                      ; --                  ; 00:00:48                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:28                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -144,22 +124,6 @@ applicable agreement for further details.
 ; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-1JGNDNM  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -171,27 +135,11 @@ quartus_fit --read_settings_files=off --write_settings_files=off SineWaveGenerat
 quartus_asm --read_settings_files=off --write_settings_files=off SineWaveGenerator -c SineWaveGenerator
 quartus_sta SineWaveGenerator -c SineWaveGenerator
 quartus_eda --read_settings_files=off --write_settings_files=off SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform1.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform1.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform1.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform1.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform8.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform8.vwf.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog SineWaveGenerator -c SineWaveGenerator --vector_source=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/Waveform1.vwf --testbench_file=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/Waveform1.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
 
 
