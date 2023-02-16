@@ -3,14 +3,36 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
+<<<<<<< Updated upstream
 Slack : -2.803
 TNS   : -44.852
 
 Type  : Slow 1200mV 85C Model Setup 'divisor_de_clock:div_1|o_clk'
 Slack : -1.094
 TNS   : -10.992
+=======
+Slack : -1.556
+TNS   : -35.190
+
+Type  : Slow 1200mV 85C Model Setup 'divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.703
+TNS   : -3.482
+
+Type  : Slow 1200mV 85C Model Setup 'divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.700
+TNS   : -3.360
+
+Type  : Slow 1200mV 85C Model Hold 'divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+>>>>>>> Stashed changes
+
+Type  : Slow 1200mV 85C Model Hold 'divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.362
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
+<<<<<<< Updated upstream
 Slack : 0.399
 TNS   : 0.000
 
@@ -24,6 +46,9 @@ TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'divisor_de_clock:div_1|o_clk'
 Slack : 0.245
+=======
+Slack : 0.392
+>>>>>>> Stashed changes
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
@@ -35,6 +60,7 @@ Slack : -1.285
 TNS   : -20.560
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
+<<<<<<< Updated upstream
 Slack : -2.456
 TNS   : -38.410
 
@@ -56,6 +82,29 @@ TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'divisor_de_clock:div_1|o_clk'
 Slack : 0.245
+=======
+Slack : -1.287
+TNS   : -28.829
+
+Type  : Slow 1200mV 0C Model Setup 'divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.510
+TNS   : -2.334
+
+Type  : Slow 1200mV 0C Model Setup 'divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.507
+TNS   : -2.240
+
+Type  : Slow 1200mV 0C Model Hold 'divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.348
+>>>>>>> Stashed changes
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
@@ -67,12 +116,33 @@ Slack : -1.285
 TNS   : -20.560
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
+<<<<<<< Updated upstream
 Slack : -0.794
 TNS   : -8.631
 
 Type  : Fast 1200mV 0C Model Setup 'divisor_de_clock:div_1|o_clk'
 Slack : -0.022
 TNS   : -0.022
+=======
+Slack : -0.407
+TNS   : -7.705
+
+Type  : Fast 1200mV 0C Model Setup 'divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.050
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+>>>>>>> Stashed changes
+
+Type  : Fast 1200mV 0C Model Hold 'divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.194
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
 Slack : 0.184
@@ -92,7 +162,11 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
+<<<<<<< Updated upstream
 TNS   : -46.354
+=======
+TNS   : -31.715
+>>>>>>> Stashed changes
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:div_1|o_clk'
 Slack : -1.000
