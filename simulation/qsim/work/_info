@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\projects\SinusoidalPWM-generator-for-IGBT-based-inverter\simulation\qsim
+vSineWave
+Z1 !s100 QEE27NFif99<8^AV]=A=o3
+Z2 IeQ4dfk<MfKane046zo2>?2
+Z3 Va<KaCf5fgzXP_ZIB]DS4D0
+Z4 dC:\altera\projects\SinusoidalPWM-generator-for-IGBT-based-inverter\simulation\qsim
+Z5 w1676579373
+Z6 8SineWaveGenerator.vo
+Z7 FSineWaveGenerator.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|SineWaveGenerator.vo|
+Z10 o-work work -O0
+Z11 n@sine@wave
+!i10b 1
+!s85 0
+Z12 !s108 1676579374.117000
+Z13 !s107 SineWaveGenerator.vo|
+!s101 -O0
+vSineWave_vlg_check_tst
+!i10b 1
+Z14 !s100 iL=EEPH<JH[a?`hP35FRk1
+Z15 I1ek>[=HAT6D9XIFA8cUZC3
+Z16 V:fK^A@zNaBXS1<g_1mR5b3
+R4
+Z17 w1676579371
+Z18 8Waveform5.vwf.vt
+Z19 FWaveform5.vwf.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1676579374.224000
+Z21 !s107 Waveform5.vwf.vt|
+Z22 !s90 -work|work|Waveform5.vwf.vt|
+!s101 -O0
+R10
+Z23 n@sine@wave_vlg_check_tst
+vSineWave_vlg_sample_tst
+!i10b 1
+Z24 !s100 bFoSKIPkkX:;nHoIKS`711
+Z25 ILQ?kiMHNGahHkYSZ1B@7`1
+Z26 V0GMiCdM=B7Jo]5o`a8>Fo0
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@sine@wave_vlg_sample_tst
+vSineWave_vlg_vec_tst
+!i10b 1
+!s100 SmXdI]`2UHCD?46eC8h=m3
+I:gD6z[bQioGYIh4U@Kl0K0
+Z28 V8G>E?ThT`og_^57bolI6f2
+R4
+R17
+R18
+R19
+Z29 L0 279
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@sine@wave_vlg_vec_tst
+vSineWaveGenerator
+Z31 Im1L50i447940d`2Od_Be:1
+Z32 V]_gD^XMXU_hD__8TH_?Uf3
+R4
+Z33 w1676571032
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z34 n@sine@wave@generator
+Z35 !s100 DGb^Bj_`7e9;hJHQ:[3g50
+Z36 !s108 1676571033.230000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vSineWaveGenerator_vlg_check_tst
+Z37 IT3lg?0K=NgJ?L@1Paf<X40
+Z38 VVHeNDOfn8K`NeOjM1Z?K=0
+R4
+Z39 w1676571030
+Z40 8Waveform4.vwf.vt
+Z41 FWaveform4.vwf.vt
+L0 61
+R8
+r1
+31
+Z42 !s108 1676571033.379000
+Z43 !s107 Waveform4.vwf.vt|
+Z44 !s90 -work|work|Waveform4.vwf.vt|
+R10
+Z45 n@sine@wave@generator_vlg_check_tst
+Z46 !s100 B993cZIba1V9BITee7>=W0
+!i10b 1
+!s85 0
+!s101 -O0
+vSineWaveGenerator_vlg_sample_tst
+Z47 IIf>XlDEdUJ^h?VY[6RJhS1
+Z48 VQ0K_`O?<kbCQZ3b5aDYQ02
+R4
+R39
+R40
+R41
+L0 29
+R8
+r1
+31
+R42
+R43
+R44
+R10
+Z49 n@sine@wave@generator_vlg_sample_tst
+Z50 !s100 bXSRNXePo3ccQOUl_fZ9f2
+!i10b 1
+!s85 0
+!s101 -O0
+vSineWaveGenerator_vlg_vec_tst
+Z51 I33nB7@L8;MIS8`_n86ZXA2
+Z52 Ve`04hLiG2dkDM4RVE3V8X2
+R4
+R39
+R40
+R41
+Z53 L0 183
+R8
+r1
+31
+R42
+R43
+R44
+R10
+Z54 n@sine@wave@generator_vlg_vec_tst
+Z55 !s100 h]S_i94@oALCfRl3;DI840
+!i10b 1
+!s85 0
+!s101 -O0
