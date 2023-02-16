@@ -31,6 +31,7 @@ architecture threePWM of SineWaveGenerator is
 	component SineWave is 
 		port (
 			ctt : in std_logic_vector(7 downto 0);
+			offsetValue : in integer;
 			wave : out std_logic_vector(7 downto 0)
 		);
 	end component SineWave;
@@ -52,13 +53,6 @@ architecture threePWM of SineWaveGenerator is
 	
 	end component divisor_de_clock;
 	
-	component Atraso is
-		port(
-			clk : in std_logic;
-			inverse_enable_out : out std_logic
-		);
-	end component Atraso;
-	
 	component NotGate is
 		port(
 			input: in std_logic;
@@ -67,7 +61,7 @@ architecture threePWM of SineWaveGenerator is
 	end component NotGate;
 	
 	
-	signal divisor_to_portadora,divisor_to_mod,atraso_enable,mod_atrasada : std_logic;
+	signal divisor_to_portadora,divisor_to_mod,mod_atrasada : std_logic;
 	
 	signal contador_mod, contador_not_mod,contador_port,moduladora_out,not_moduladora,triangular_out : std_logic_vector (7 downto 0);
 	
@@ -80,17 +74,13 @@ architecture threePWM of SineWaveGenerator is
 		divisor_moduladora : divisor_de_clock
 			port map (clk,rst,"101000101101",divisor_to_mod);	
 		
-		-- Atraso
-		at : Atraso
-			port map(clk,atraso_enable);
-		
 		-- contadores
 		
 		ct_mod : contador
 			port map(divisor_to_mod,rst,contador_mod);
 		
 		ct_not_mod : contador
-			port map(divisor_to_mod,atraso_enable,contador_not_mod);
+			port map(divisor_to_mod,rst,contador_not_mod);
 			
 		ct_port : contador --contador da triangular
 			port map(divisor_to_portadora,rst,contador_port);
@@ -102,10 +92,10 @@ architecture threePWM of SineWaveGenerator is
 		--senoidal
 
 		pwm : SineWave
-			port map(contador_mod,moduladora_out);
+			port map(contador_mod,(0),moduladora_out);
 		
 		not_pwm : SineWave
-			port map(contador_not_mod,not_moduladora);
+			port map(contador_not_mod,2,not_moduladora);
 	
 		
 		-- comparadores
