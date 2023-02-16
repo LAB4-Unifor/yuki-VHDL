@@ -89,10 +89,10 @@ architecture threePWM of SineWaveGenerator is
 		--senoidal
 
 		pwm : SineWave
-			port map(contador_mod,(-10),moduladora_out);
+			port map(contador_mod,(+3),moduladora_out);
 		
 		not_pwm : SineWave
-			port map(contador_mod,10,not_moduladora);
+			port map(contador_mod,(-3),not_moduladora);
 	
 		
 		-- comparadores
