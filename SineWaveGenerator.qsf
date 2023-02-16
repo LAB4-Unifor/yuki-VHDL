@@ -18,7 +18,7 @@
 #
 # Quartus II 64-Bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-# Date created = 21:39:17  January 11, 2023
+# Date created = 15:37:20  February 14, 2023
 #
 # -------------------------------------------------------------------------- #
 #
@@ -37,18 +37,31 @@
 
 
 set_global_assignment -name FAMILY "Cyclone III"
-set_global_assignment -name DEVICE EP3C40F324C7
+set_global_assignment -name DEVICE EP3C16F484C6
 set_global_assignment -name TOP_LEVEL_ENTITY SineWaveGenerator
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:39:17  JANUARY 11, 2023"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:37:20  FEBRUARY 14, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
-set_global_assignment -name VHDL_FILE SineWaveGenerator.vhd
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_B9 -to clk
-set_location_assignment PIN_V14 -to not_sin
-set_location_assignment PIN_V15 -to sin
+set_location_assignment PIN_G21 -to clk
+set_location_assignment PIN_AB17 -to not_sin
+set_location_assignment PIN_AA17 -to sin
+set_location_assignment PIN_J6 -to rst
+set_global_assignment -name VHDL_FILE SineWaveGenerator.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

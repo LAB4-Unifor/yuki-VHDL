@@ -1,12 +1,8 @@
 <sld_project_info>
   <project>
-<<<<<<< Updated upstream
-    <hash md5_digest_80b="75b98542f246f3c70715"/>
-=======
-    <hash md5_digest_80b="6d3253842ea0b1697583"/>
->>>>>>> Stashed changes
+    <hash md5_digest_80b="6e47695667be5d938cf9"/>
   </project>
   <file_info>
-    <file device="EP3C40F324C7" path="SineWaveGenerator.sof" usercode="0xFFFFFFFF"/>
+    <file device="EP3C16F484C6" path="SineWaveGenerator.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>
