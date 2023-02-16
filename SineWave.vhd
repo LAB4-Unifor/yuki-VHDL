@@ -61,10 +61,10 @@ architecture ondaSenoidal of SineWave is
 	
 	begin
 	
-	adress <= conv_integer(unsigned(ctt + offsetValue)); -- converte a entrada ctt para 'integer'
+	adress <= conv_integer(unsigned(ctt)); -- converte a entrada ctt para 'integer'
 
 		
-	wave <= std_logic_vector(conv_UNSIGNED(dados(adress), wave'length)); --converte o signal adress para 'Std_logic_vector'
+	wave <= std_logic_vector(conv_UNSIGNED(dados(adress) + offsetValue, wave'length)); --converte o signal adress para 'Std_logic_vector'
 
 
 end ondaSenoidal;
