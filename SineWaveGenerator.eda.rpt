@@ -1,5 +1,5 @@
 EDA Netlist Writer report for SineWaveGenerator
-Fri Feb 17 08:31:43 2023
+Fri Feb 17 09:50:37 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Feb 17 08:31:43 2023 ;
+; EDA Netlist Writer Status ; Successful - Fri Feb 17 09:50:37 2023 ;
 ; Revision Name             ; SineWaveGenerator                     ;
 ; Top-level Entity Name     ; driverSPWMGenerator                   ;
 ; Family                    ; Cyclone III                           ;
@@ -93,12 +93,12 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Fri Feb 17 08:31:42 2023
+    Info: Processing started: Fri Feb 17 09:50:36 2023
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim/ SineWaveGenerator -c SineWaveGenerator
 Info (204019): Generated file SineWaveGenerator.vo in folder "C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4542 megabytes
-    Info: Processing ended: Fri Feb 17 08:31:43 2023
+    Info: Processing ended: Fri Feb 17 09:50:37 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

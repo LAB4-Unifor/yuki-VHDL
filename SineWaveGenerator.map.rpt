@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SineWaveGenerator
-Fri Feb 17 08:29:23 2023
+Fri Feb 17 09:48:57 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -52,16 +52,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 17 08:29:23 2023      ;
+; Analysis & Synthesis Status        ; Successful - Fri Feb 17 09:48:57 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; SineWaveGenerator                          ;
 ; Top-level Entity Name              ; driverSPWMGenerator                        ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 636                                        ;
-;     Total combinational functions  ; 631                                        ;
+; Total logic elements               ; 668                                        ;
+;     Total combinational functions  ; 663                                        ;
 ;     Dedicated logic registers      ; 83                                         ;
 ; Total registers                    ; 83                                         ;
-; Total pins                         ; 22                                         ;
+; Total pins                         ; 23                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -188,28 +188,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 636       ;
+; Estimated Total logic elements              ; 668       ;
 ;                                             ;           ;
-; Total combinational functions               ; 631       ;
+; Total combinational functions               ; 663       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 392       ;
-;     -- 3 input functions                    ; 90        ;
-;     -- <=2 input functions                  ; 149       ;
+;     -- 4 input functions                    ; 418       ;
+;     -- 3 input functions                    ; 95        ;
+;     -- <=2 input functions                  ; 150       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 488       ;
-;     -- arithmetic mode                      ; 143       ;
+;     -- normal mode                          ; 506       ;
+;     -- arithmetic mode                      ; 157       ;
 ;                                             ;           ;
 ; Total registers                             ; 83        ;
 ;     -- Dedicated logic registers            ; 83        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 22        ;
+; I/O pins                                    ; 23        ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; rst~input ;
 ; Maximum fan-out                             ; 83        ;
-; Total fan-out                               ; 2422      ;
-; Average fan-out                             ; 3.20      ;
+; Total fan-out                               ; 2548      ;
+; Average fan-out                             ; 3.22      ;
 +---------------------------------------------+-----------+
 
 
@@ -218,7 +218,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Library Name ;
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
-; |driverSPWMGenerator                        ; 631 (0)           ; 83 (0)       ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |driverSPWMGenerator                                                               ; work         ;
+; |driverSPWMGenerator                        ; 663 (0)           ; 83 (0)       ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |driverSPWMGenerator                                                               ; work         ;
 ;    |SineWaveGenerator:phase_1|              ; 249 (0)           ; 47 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_1                                     ; work         ;
 ;       |SineWave:not_pwm|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_1|SineWave:not_pwm                    ; work         ;
 ;       |SineWave:pwm|                        ; 156 (156)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_1|SineWave:pwm                        ; work         ;
@@ -229,9 +229,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |divisor_de_clock:divisor_moduladora| ; 25 (25)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora ; work         ;
 ;       |divisor_de_clock:divisor_portadora|  ; 22 (22)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora  ; work         ;
 ;       |portadora:tri|                       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_1|portadora:tri                       ; work         ;
-;    |SineWaveGenerator:phase_2|              ; 193 (0)           ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2                                     ; work         ;
+;    |SineWaveGenerator:phase_2|              ; 207 (0)           ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2                                     ; work         ;
 ;       |SineWave:not_pwm|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2|SineWave:not_pwm                    ; work         ;
-;       |SineWave:pwm|                        ; 147 (147)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2|SineWave:pwm                        ; work         ;
+;       |SineWave:pwm|                        ; 161 (161)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2|SineWave:pwm                        ; work         ;
 ;       |comparador:comp_1|                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2|comparador:comp_1                   ; work         ;
 ;       |comparador:comp_2|                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2|comparador:comp_2                   ; work         ;
 ;       |contador:ct_mod|                     ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2|contador:ct_mod                     ; work         ;
@@ -239,9 +239,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |divisor_de_clock:divisor_moduladora| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora ; work         ;
 ;       |divisor_de_clock:divisor_portadora|  ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora  ; work         ;
 ;       |portadora:tri|                       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_2|portadora:tri                       ; work         ;
-;    |SineWaveGenerator:phase_3|              ; 189 (0)           ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_3                                     ; work         ;
+;    |SineWaveGenerator:phase_3|              ; 207 (0)           ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_3                                     ; work         ;
 ;       |SineWave:not_pwm|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_3|SineWave:not_pwm                    ; work         ;
-;       |SineWave:pwm|                        ; 143 (143)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_3|SineWave:pwm                        ; work         ;
+;       |SineWave:pwm|                        ; 161 (161)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_3|SineWave:pwm                        ; work         ;
 ;       |comparador:comp_1|                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_3|comparador:comp_1                   ; work         ;
 ;       |comparador:comp_2|                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_3|comparador:comp_2                   ; work         ;
 ;       |contador:ct_mod|                     ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |driverSPWMGenerator|SineWaveGenerator:phase_3|contador:ct_mod                     ; work         ;
@@ -270,46 +270,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|r_clk_divider[0,1,4..13]               ; Stuck at GND due to stuck port data_in                                                      ;
 ; SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[0,1,4,6..8,10,12,13]    ; Stuck at GND due to stuck port data_in                                                      ;
 ; SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_divider[0,1,4..13]               ; Stuck at GND due to stuck port data_in                                                      ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[13]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[13] ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[13]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[13] ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[12]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[12] ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[12]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[12] ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[11]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[11] ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[11]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[11] ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[10]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[10] ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[10]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[10] ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[9]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[9]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[9]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[9]  ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[8]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[8]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[8]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[8]  ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[7]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[7]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[7]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[7]  ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[6]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[6]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[6]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[6]  ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[5]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[5]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[5]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[5]  ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[4]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[4]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[4]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[4]  ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[3]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[3]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[3]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[3]  ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[2]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[2]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[2]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[2]  ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[1]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[1]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[1]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[1]  ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[0]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[0]  ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[0]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[0]  ;
-; SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[2,3,5,9]                ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider_half[1,2,4,8,10]        ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_divider[2,3]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_divider_half[1,2]                ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_divider[2,3,5,9,11]             ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_divider_half[1,2,4,8,10]        ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|r_clk_divider[2,3]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|r_clk_divider_half[1,2]                ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_divider[2,3,5,9,11]             ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_divider_half[1,2,4,8,10]        ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|r_clk_divider[2,3]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
-; SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|r_clk_divider_half[1,2]                ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
 ; SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|r_clk_counter[13]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_counter[13]  ;
 ; SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|r_clk_counter[13]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_counter[13]  ;
 ; SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|r_clk_counter[12]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_counter[12]  ;
@@ -338,6 +298,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|r_clk_counter[1]                       ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_counter[1]   ;
 ; SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|r_clk_counter[0]                       ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_counter[0]   ;
 ; SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|r_clk_counter[0]                       ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_counter[0]   ;
+; SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[2,3,5,9]                ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider_half[1,2,4,8,10]        ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_divider[2,3]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_divider_half[1,2]                ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_divider[2,3,5,9,11]             ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_divider_half[1,2,4,8,10]        ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|r_clk_divider[2,3]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|r_clk_divider_half[1,2]                ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_divider[2,3,5,9,11]             ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_divider_half[1,2,4,8,10]        ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|r_clk_divider[2,3]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|r_clk_divider_half[1,2]                ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_divider[11] ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[13]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[13] ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[13]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[13] ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[12]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[12] ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[12]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[12] ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[11]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[11] ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[11]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[11] ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[10]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[10] ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[10]                     ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[10] ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[9]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[9]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[9]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[9]  ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[8]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[8]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[8]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[8]  ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[7]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[7]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[7]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[7]  ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[6]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[6]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[6]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[6]  ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[5]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[5]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[5]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[5]  ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[4]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[4]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[4]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[4]  ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[3]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[3]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[3]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[3]  ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[2]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[2]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[2]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[2]  ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[1]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[1]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[1]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[1]  ;
+; SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|r_clk_counter[0]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[0]  ;
+; SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|r_clk_counter[0]                      ; Merged with SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[0]  ;
 ; Total Number of Removed Registers = 223                                                             ;                                                                                             ;
 +-----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
 
@@ -357,17 +357,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------+
-; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driverSPWMGenerator|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[1] ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driverSPWMGenerator|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_counter[12] ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |driverSPWMGenerator|SineWaveGenerator:phase_1|portadora:tri|wave[7]                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |driverSPWMGenerator|SineWaveGenerator:phase_2|portadora:tri|wave[7]                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |driverSPWMGenerator|SineWaveGenerator:phase_3|portadora:tri|wave[2]                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------+
+; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driverSPWMGenerator|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|r_clk_counter[1]   ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driverSPWMGenerator|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|r_clk_counter[12] ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |driverSPWMGenerator|SineWaveGenerator:phase_1|portadora:tri|wave[7]                                 ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |driverSPWMGenerator|SineWaveGenerator:phase_2|portadora:tri|wave[7]                                 ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |driverSPWMGenerator|SineWaveGenerator:phase_3|portadora:tri|wave[2]                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -375,14 +375,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+-------+----------+----------------+
 ; Port              ; Type  ; Severity ; Details        ;
 +-------------------+-------+----------+----------------+
-; delayvalue[1..0]  ; Input ; Info     ; Stuck at VCC   ;
 ; delayvalue[31..8] ; Input ; Info     ; Stuck at GND   ;
-; delayvalue[7]     ; Input ; Info     ; Stuck at VCC   ;
-; delayvalue[6]     ; Input ; Info     ; Stuck at GND   ;
-; delayvalue[5]     ; Input ; Info     ; Stuck at VCC   ;
-; delayvalue[4]     ; Input ; Info     ; Stuck at GND   ;
-; delayvalue[3]     ; Input ; Info     ; Stuck at VCC   ;
-; delayvalue[2]     ; Input ; Info     ; Stuck at GND   ;
+; delayvalue[0]     ; Input ; Info     ; Stuck at VCC   ;
 +-------------------+-------+----------+----------------+
 
 
@@ -391,13 +385,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+-------+----------+----------------+
 ; Port              ; Type  ; Severity ; Details        ;
 +-------------------+-------+----------+----------------+
-; delayvalue[31..7] ; Input ; Info     ; Stuck at GND   ;
-; delayvalue[6]     ; Input ; Info     ; Stuck at VCC   ;
-; delayvalue[5]     ; Input ; Info     ; Stuck at GND   ;
-; delayvalue[4]     ; Input ; Info     ; Stuck at VCC   ;
-; delayvalue[3]     ; Input ; Info     ; Stuck at GND   ;
-; delayvalue[2]     ; Input ; Info     ; Stuck at VCC   ;
-; delayvalue[1]     ; Input ; Info     ; Stuck at GND   ;
+; delayvalue[31..8] ; Input ; Info     ; Stuck at GND   ;
 ; delayvalue[0]     ; Input ; Info     ; Stuck at VCC   ;
 +-------------------+-------+----------+----------------+
 
@@ -495,7 +483,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Feb 17 08:29:16 2023
+    Info: Processing started: Fri Feb 17 09:48:49 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SineWaveGenerator -c SineWaveGenerator
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file sinewavegenerator.vhd
@@ -549,14 +537,14 @@ Warning (21074): Design contains 14 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "set_clock[11]"
     Warning (15610): No output dependent on input pin "set_clock[12]"
     Warning (15610): No output dependent on input pin "set_clock[13]"
-Info (21057): Implemented 660 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
+Info (21057): Implemented 693 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 638 logic cells
+    Info (21061): Implemented 670 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4657 megabytes
-    Info: Processing ended: Fri Feb 17 08:29:23 2023
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 4668 megabytes
+    Info: Processing ended: Fri Feb 17 09:48:57 2023
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:06
 
 

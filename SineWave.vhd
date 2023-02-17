@@ -19,7 +19,7 @@ architecture ondaSenoidal of SineWave is
 	
 	constant dados : tabela_seno (0 to 255) := 
 	(
-		126,   129,   131,   134,   136,   138,   141,
+	126,   129,   131,   134,   136,   138,   141,
    143,   146,   148,   151,   153,   156,   158,
    160,   163,   165,   167,   170,   172,   174,
    176,   178,   181,   183,   185,   187,   189,
@@ -62,10 +62,10 @@ architecture ondaSenoidal of SineWave is
 	
 	begin
 	
-	adress <= conv_integer(unsigned(ctt + delayValue)); -- converte a entrada ctt para 'integer'
+	adress <= conv_integer(unsigned(ctt)); -- converte a entrada ctt para 'integer'
 
 		
-	wave <= std_logic_vector(conv_UNSIGNED(dados(adress) + offsetValue, wave'length)); --converte o signal adress para 'Std_logic_vector'
+	wave <= std_logic_vector(conv_UNSIGNED(dados(adress + delayValue) + offsetValue, wave'length)); --converte o signal adress para 'Std_logic_vector'
 
 
 end ondaSenoidal;

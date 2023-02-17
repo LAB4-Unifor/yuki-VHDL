@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Feb 17 08:29:23 2023
+Analysis & Synthesis Status : Successful - Fri Feb 17 09:48:57 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : SineWaveGenerator
 Top-level Entity Name : driverSPWMGenerator
 Family : Cyclone III
-Total logic elements : 636
-    Total combinational functions : 631
+Total logic elements : 668
+    Total combinational functions : 663
     Dedicated logic registers : 83
 Total registers : 83
-Total pins : 22
+Total pins : 23
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

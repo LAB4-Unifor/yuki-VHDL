@@ -11,8 +11,8 @@ entity driverSPWMGenerator is
 	-- "pwm_output_#" direct pwm output
 	-- "not_pwm_output_#" inverse pwm output with delay
 	port (
-		clk, rst, reverse: in std_logic;
-		set_clock: in std_logic_vector(13 downto 0); --sine wave frequency divider
+		clk, rst, reverseEnable: in std_logic;
+		set_clock: in std_logic_vector(13 downto 0); -- sine wave frequency divider
 		pwm_output_1,pwm_output_2,pwm_output_3: out std_logic; -- pwm 
 		not_pwm_output_1,not_pwm_output_2,not_pwm_output_3: out std_logic --inverted pwm
 	);
@@ -36,10 +36,10 @@ architecture driverGen of driverSPWMGenerator is
 	
 	begin
 		
-		-- delay for pahase 8 bit (120° = 85) integer 
+		-- delay for phase 8 bit (120° = 85) integer 
 		delayValue_1 <= (0);
-		delayValue_2 <= (85);
-		delayValue_3 <= (171);
+		delayValue_2 <= (85) when reverseEnable = '0' else (171); -- conditional statement for switching phase generation order
+		delayValue_3 <= (171) when reverseEnable = '0' else (85); -- conditional statement for switching phase generation order
 	
 		--phase generator 1
 		phase_1 : SineWaveGenerator

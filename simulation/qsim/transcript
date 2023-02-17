@@ -27,5 +27,5 @@
 # Loading work.driverSPWMGenerator_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : Waveform7.vwf.vt(287)
+# ** Note: $finish    : Waveform9.vwf.vt(289)
 #    Time: 100 us  Iteration: 0  Instance: /driverSPWMGenerator_vlg_vec_tst/tb_out

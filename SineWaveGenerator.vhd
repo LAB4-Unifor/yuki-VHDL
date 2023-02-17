@@ -99,10 +99,10 @@ architecture PWM of SineWaveGenerator is
 		
 		-- comparadores
 		comp_1 : comparador
-			port map(moduladora_out,triangular_out,sin);
+			port map(triangular_out,moduladora_out,sin);
 			
 		comp_2 : comparador
-			port map(not_moduladora,triangular_out,mod_atrasada);
+			port map(triangular_out,not_moduladora,mod_atrasada);
 		
 		--inversor
 		nGate : NotGate
