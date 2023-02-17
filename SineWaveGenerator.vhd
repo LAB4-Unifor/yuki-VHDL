@@ -1,4 +1,4 @@
- library IEEE;
+library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
@@ -6,12 +6,13 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity SineWaveGenerator is
 	port (
 		clk, rst: in std_logic;
-		set_clock: in std_logic_vector(11 downto 0);
+		set_clock: in std_logic_vector(13 downto 0);
+		delayValue: in integer;
 		sin,not_sin: out std_logic
 	);
 end SineWavegenerator;
 
-architecture threePWM of SineWaveGenerator is 
+architecture PWM of SineWaveGenerator is 
 	
 	component contador is
 		port (
@@ -32,6 +33,7 @@ architecture threePWM of SineWaveGenerator is
 		port (
 			ctt : in std_logic_vector(7 downto 0);
 			offsetValue : in integer;
+			delayValue : in integer;
 			wave : out std_logic_vector(7 downto 0)
 		);
 	end component SineWave;
@@ -47,7 +49,7 @@ architecture threePWM of SineWaveGenerator is
 		port(
 			i_clk         : in  std_logic;
 			i_rst         : in  std_logic;
-			i_clk_divider : in  std_logic_vector(11 downto 0);
+			i_clk_divider : in  std_logic_vector(13 downto 0);
 			o_clk         : out std_logic
 			);
 	
@@ -69,10 +71,10 @@ architecture threePWM of SineWaveGenerator is
 		
 		--Divisor de Clock
 		divisor_portadora : divisor_de_clock
-			port map (clk,rst,"000000001101",divisor_to_portadora);
+			port map (clk,rst,"00000000001101",divisor_to_portadora);
 			
 		divisor_moduladora : divisor_de_clock
-			port map (clk,rst,"101000101101",divisor_to_mod);	
+			port map (clk,rst,"00101000101101",divisor_to_mod);	
 		
 		-- contadores
 		
@@ -89,10 +91,10 @@ architecture threePWM of SineWaveGenerator is
 		--senoidal
 
 		pwm : SineWave
-			port map(contador_mod,(+3),moduladora_out);
+			port map(contador_mod,(+3),delayValue,moduladora_out);
 		
 		not_pwm : SineWave
-			port map(contador_mod,(-3),not_moduladora);
+			port map(contador_mod,(-3),delayValue,not_moduladora);
 	
 		
 		-- comparadores
@@ -107,5 +109,5 @@ architecture threePWM of SineWaveGenerator is
 			port map (mod_atrasada,not_sin);
 
 
-end threePWM;
+end PWM;
 

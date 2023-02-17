@@ -7,16 +7,16 @@ entity divisor_de_clock is
 port(
   i_clk         : in  std_logic;
   i_rst         : in  std_logic;
-  i_clk_divider : in  std_logic_vector(11 downto 0);
+  i_clk_divider : in  std_logic_vector(13 downto 0);
   o_clk         : out std_logic
 	);
 end divisor_de_clock;
 
 architecture rtl of divisor_de_clock is
 
-	signal r_clk_counter        : unsigned(11 downto 0);
-	signal r_clk_divider        : unsigned(11 downto 0);
-	signal r_clk_divider_half   : unsigned(11 downto 0);
+	signal r_clk_counter        : unsigned(13 downto 0);
+	signal r_clk_divider        : unsigned(13 downto 0);
+	signal r_clk_divider_half   : unsigned(13 downto 0);
 
 	begin
 
@@ -31,7 +31,7 @@ architecture rtl of divisor_de_clock is
 	  elsif(rising_edge(i_clk)) then
 		
 		r_clk_divider       <= unsigned (i_clk_divider) - 1;
-		 r_clk_divider_half  <= unsigned ('0'&i_clk_divider(11 downto 1)); -- half
+		 r_clk_divider_half  <= unsigned ('0'&i_clk_divider(13 downto 1)); -- half
 		 
 		 if(r_clk_counter < r_clk_divider_half) then 
 			r_clk_counter   <= r_clk_counter + 1;
