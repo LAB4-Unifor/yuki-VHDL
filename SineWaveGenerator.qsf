@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY SineWaveGenerator
+set_global_assignment -name TOP_LEVEL_ENTITY driverSPWMGenerator
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:37:20  FEBRUARY 14, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -50,8 +50,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_G21 -to clk
-set_location_assignment PIN_AB17 -to not_sin
-set_location_assignment PIN_AA17 -to sin
 set_location_assignment PIN_J6 -to rst
 set_global_assignment -name VHDL_FILE SineWaveGenerator.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
@@ -62,7 +60,19 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE driverSPWMGenerator.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform9.vwf
+set_location_assignment PIN_H5 -to reverseEnable
+set_location_assignment PIN_AA17 -to pwm_output_1
+set_location_assignment PIN_AA18 -to pwm_output_2
+set_location_assignment PIN_AA19 -to pwm_output_3
+set_location_assignment PIN_AB17 -to not_pwm_output_1
+set_location_assignment PIN_AB18 -to not_pwm_output_2
+set_location_assignment PIN_AB19 -to not_pwm_output_3
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

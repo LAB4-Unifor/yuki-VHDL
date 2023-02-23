@@ -1,0 +1,433 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "02/17/2023 09:50:35"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    driverSPWMGenerator
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module driverSPWMGenerator_vlg_sample_tst(
+	clk,
+	reverseEnable,
+	rst,
+	set_clock,
+	sampler_tx
+);
+input  clk;
+input  reverseEnable;
+input  rst;
+input [13:0] set_clock;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk or reverseEnable or rst or set_clock)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module driverSPWMGenerator_vlg_check_tst (
+	not_pwm_output_1,
+	not_pwm_output_2,
+	not_pwm_output_3,
+	pwm_output_1,
+	pwm_output_2,
+	pwm_output_3,
+	sampler_rx
+);
+input  not_pwm_output_1;
+input  not_pwm_output_2;
+input  not_pwm_output_3;
+input  pwm_output_1;
+input  pwm_output_2;
+input  pwm_output_3;
+input sampler_rx;
+
+reg  not_pwm_output_1_expected;
+reg  not_pwm_output_2_expected;
+reg  not_pwm_output_3_expected;
+reg  pwm_output_1_expected;
+reg  pwm_output_2_expected;
+reg  pwm_output_3_expected;
+
+reg  not_pwm_output_1_prev;
+reg  not_pwm_output_2_prev;
+reg  not_pwm_output_3_prev;
+reg  pwm_output_1_prev;
+reg  pwm_output_2_prev;
+reg  pwm_output_3_prev;
+
+reg  not_pwm_output_1_expected_prev;
+reg  not_pwm_output_2_expected_prev;
+reg  not_pwm_output_3_expected_prev;
+reg  pwm_output_1_expected_prev;
+reg  pwm_output_2_expected_prev;
+reg  pwm_output_3_expected_prev;
+
+reg  last_not_pwm_output_1_exp;
+reg  last_not_pwm_output_2_exp;
+reg  last_not_pwm_output_3_exp;
+reg  last_pwm_output_1_exp;
+reg  last_pwm_output_2_exp;
+reg  last_pwm_output_3_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:6] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 6'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	not_pwm_output_1_prev = not_pwm_output_1;
+	not_pwm_output_2_prev = not_pwm_output_2;
+	not_pwm_output_3_prev = not_pwm_output_3;
+	pwm_output_1_prev = pwm_output_1;
+	pwm_output_2_prev = pwm_output_2;
+	pwm_output_3_prev = pwm_output_3;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	not_pwm_output_1_expected_prev = not_pwm_output_1_expected;
+	not_pwm_output_2_expected_prev = not_pwm_output_2_expected;
+	not_pwm_output_3_expected_prev = not_pwm_output_3_expected;
+	pwm_output_1_expected_prev = pwm_output_1_expected;
+	pwm_output_2_expected_prev = pwm_output_2_expected;
+	pwm_output_3_expected_prev = pwm_output_3_expected;
+end
+
+
+
+// expected not_pwm_output_1
+initial
+begin
+	not_pwm_output_1_expected = 1'bX;
+end 
+
+// expected not_pwm_output_2
+initial
+begin
+	not_pwm_output_2_expected = 1'bX;
+end 
+
+// expected not_pwm_output_3
+initial
+begin
+	not_pwm_output_3_expected = 1'bX;
+end 
+
+// expected pwm_output_1
+initial
+begin
+	pwm_output_1_expected = 1'bX;
+end 
+
+// expected pwm_output_2
+initial
+begin
+	pwm_output_2_expected = 1'bX;
+end 
+
+// expected pwm_output_3
+initial
+begin
+	pwm_output_3_expected = 1'bX;
+end 
+// generate trigger
+always @(not_pwm_output_1_expected or not_pwm_output_1 or not_pwm_output_2_expected or not_pwm_output_2 or not_pwm_output_3_expected or not_pwm_output_3 or pwm_output_1_expected or pwm_output_1 or pwm_output_2_expected or pwm_output_2 or pwm_output_3_expected or pwm_output_3)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected not_pwm_output_1 = %b | expected not_pwm_output_2 = %b | expected not_pwm_output_3 = %b | expected pwm_output_1 = %b | expected pwm_output_2 = %b | expected pwm_output_3 = %b | ",not_pwm_output_1_expected_prev,not_pwm_output_2_expected_prev,not_pwm_output_3_expected_prev,pwm_output_1_expected_prev,pwm_output_2_expected_prev,pwm_output_3_expected_prev);
+	$display("| real not_pwm_output_1 = %b | real not_pwm_output_2 = %b | real not_pwm_output_3 = %b | real pwm_output_1 = %b | real pwm_output_2 = %b | real pwm_output_3 = %b | ",not_pwm_output_1_prev,not_pwm_output_2_prev,not_pwm_output_3_prev,pwm_output_1_prev,pwm_output_2_prev,pwm_output_3_prev);
+`endif
+	if (
+		( not_pwm_output_1_expected_prev !== 1'bx ) && ( not_pwm_output_1_prev !== not_pwm_output_1_expected_prev )
+		&& ((not_pwm_output_1_expected_prev !== last_not_pwm_output_1_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port not_pwm_output_1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", not_pwm_output_1_expected_prev);
+		$display ("     Real value = %b", not_pwm_output_1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_not_pwm_output_1_exp = not_pwm_output_1_expected_prev;
+	end
+	if (
+		( not_pwm_output_2_expected_prev !== 1'bx ) && ( not_pwm_output_2_prev !== not_pwm_output_2_expected_prev )
+		&& ((not_pwm_output_2_expected_prev !== last_not_pwm_output_2_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port not_pwm_output_2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", not_pwm_output_2_expected_prev);
+		$display ("     Real value = %b", not_pwm_output_2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_not_pwm_output_2_exp = not_pwm_output_2_expected_prev;
+	end
+	if (
+		( not_pwm_output_3_expected_prev !== 1'bx ) && ( not_pwm_output_3_prev !== not_pwm_output_3_expected_prev )
+		&& ((not_pwm_output_3_expected_prev !== last_not_pwm_output_3_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port not_pwm_output_3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", not_pwm_output_3_expected_prev);
+		$display ("     Real value = %b", not_pwm_output_3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_not_pwm_output_3_exp = not_pwm_output_3_expected_prev;
+	end
+	if (
+		( pwm_output_1_expected_prev !== 1'bx ) && ( pwm_output_1_prev !== pwm_output_1_expected_prev )
+		&& ((pwm_output_1_expected_prev !== last_pwm_output_1_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port pwm_output_1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", pwm_output_1_expected_prev);
+		$display ("     Real value = %b", pwm_output_1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_pwm_output_1_exp = pwm_output_1_expected_prev;
+	end
+	if (
+		( pwm_output_2_expected_prev !== 1'bx ) && ( pwm_output_2_prev !== pwm_output_2_expected_prev )
+		&& ((pwm_output_2_expected_prev !== last_pwm_output_2_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port pwm_output_2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", pwm_output_2_expected_prev);
+		$display ("     Real value = %b", pwm_output_2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_pwm_output_2_exp = pwm_output_2_expected_prev;
+	end
+	if (
+		( pwm_output_3_expected_prev !== 1'bx ) && ( pwm_output_3_prev !== pwm_output_3_expected_prev )
+		&& ((pwm_output_3_expected_prev !== last_pwm_output_3_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port pwm_output_3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", pwm_output_3_expected_prev);
+		$display ("     Real value = %b", pwm_output_3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_pwm_output_3_exp = pwm_output_3_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#100000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module driverSPWMGenerator_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg reverseEnable;
+reg rst;
+reg [13:0] set_clock;
+// wires                                               
+wire not_pwm_output_1;
+wire not_pwm_output_2;
+wire not_pwm_output_3;
+wire pwm_output_1;
+wire pwm_output_2;
+wire pwm_output_3;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+driverSPWMGenerator i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.not_pwm_output_1(not_pwm_output_1),
+	.not_pwm_output_2(not_pwm_output_2),
+	.not_pwm_output_3(not_pwm_output_3),
+	.pwm_output_1(pwm_output_1),
+	.pwm_output_2(pwm_output_2),
+	.pwm_output_3(pwm_output_3),
+	.reverseEnable(reverseEnable),
+	.rst(rst),
+	.set_clock(set_clock)
+);
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #10000 1'b1;
+	#10000;
+end 
+
+// reverseEnable
+initial
+begin
+	reverseEnable = 1'b0;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b0;
+end 
+// set_clock[ 13 ]
+initial
+begin
+	set_clock[13] = 1'b0;
+end 
+// set_clock[ 12 ]
+initial
+begin
+	set_clock[12] = 1'b0;
+end 
+// set_clock[ 11 ]
+initial
+begin
+	set_clock[11] = 1'b0;
+end 
+// set_clock[ 10 ]
+initial
+begin
+	set_clock[10] = 1'b0;
+end 
+// set_clock[ 9 ]
+initial
+begin
+	set_clock[9] = 1'b0;
+end 
+// set_clock[ 8 ]
+initial
+begin
+	set_clock[8] = 1'b0;
+end 
+// set_clock[ 7 ]
+initial
+begin
+	set_clock[7] = 1'b0;
+end 
+// set_clock[ 6 ]
+initial
+begin
+	set_clock[6] = 1'b0;
+end 
+// set_clock[ 5 ]
+initial
+begin
+	set_clock[5] = 1'b0;
+end 
+// set_clock[ 4 ]
+initial
+begin
+	set_clock[4] = 1'b0;
+end 
+// set_clock[ 3 ]
+initial
+begin
+	set_clock[3] = 1'b0;
+end 
+// set_clock[ 2 ]
+initial
+begin
+	set_clock[2] = 1'b0;
+end 
+// set_clock[ 1 ]
+initial
+begin
+	set_clock[1] = 1'b0;
+end 
+// set_clock[ 0 ]
+initial
+begin
+	set_clock[0] = 1'b0;
+end 
+
+driverSPWMGenerator_vlg_sample_tst tb_sample (
+	.clk(clk),
+	.reverseEnable(reverseEnable),
+	.rst(rst),
+	.set_clock(set_clock),
+	.sampler_tx(sampler)
+);
+
+driverSPWMGenerator_vlg_check_tst tb_out(
+	.not_pwm_output_1(not_pwm_output_1),
+	.not_pwm_output_2(not_pwm_output_2),
+	.not_pwm_output_3(not_pwm_output_3),
+	.pwm_output_1(pwm_output_1),
+	.pwm_output_2(pwm_output_2),
+	.pwm_output_3(pwm_output_3),
+	.sampler_rx(sampler)
+);
+endmodule
+

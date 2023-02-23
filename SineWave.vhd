@@ -8,6 +8,7 @@ entity SineWave is
 	port(
 		ctt : in std_logic_vector(7 downto 0);
 		offsetValue : in integer;
+		delayValue : in integer;
 		wave : out std_logic_vector(7 downto 0)
 	);
 end SineWave;
@@ -18,7 +19,7 @@ architecture ondaSenoidal of SineWave is
 	
 	constant dados : tabela_seno (0 to 255) := 
 	(
-		126,   129,   131,   134,   136,   138,   141,
+	126,   129,   131,   134,   136,   138,   141,
    143,   146,   148,   151,   153,   156,   158,
    160,   163,   165,   167,   170,   172,   174,
    176,   178,   181,   183,   185,   187,   189,
@@ -68,7 +69,7 @@ architecture ondaSenoidal of SineWave is
 >>>>>>> Stashed changes
 
 		
-	wave <= std_logic_vector(conv_UNSIGNED(dados(adress) + offsetValue, wave'length)); --converte o signal adress para 'Std_logic_vector'
+	wave <= std_logic_vector(conv_UNSIGNED(dados(adress + delayValue) + offsetValue, wave'length)); --converte o signal adress para 'Std_logic_vector'
 
 
 end ondaSenoidal;
