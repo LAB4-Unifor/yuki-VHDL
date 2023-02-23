@@ -3,50 +3,34 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -1.879
-TNS   : -56.081
+Slack : -1.945
+TNS   : -56.433
 
-Type  : Slow 1200mV 85C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : -0.769
-TNS   : -4.143
+Type  : Slow 1200mV 85C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.948
+TNS   : -4.218
 
 Type  : Slow 1200mV 85C Model Setup 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : -0.759
-TNS   : -4.037
+Slack : -0.789
+TNS   : -4.246
+
+Type  : Slow 1200mV 85C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.747
+TNS   : -3.996
 
 Type  : Slow 1200mV 85C Model Setup 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
 Slack : -0.701
-TNS   : -3.362
-
-Type  : Slow 1200mV 85C Model Setup 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
-Slack : -0.700
-TNS   : -3.577
-
-Type  : Slow 1200mV 85C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
-Slack : -0.700
 TNS   : -3.359
 
 Type  : Slow 1200mV 85C Model Setup 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : -0.699
-TNS   : -3.373
+TNS   : -3.380
 
-Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.360
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.698
+TNS   : -3.567
 
 Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.360
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : 0.361
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.361
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : 0.361
 TNS   : 0.000
 
@@ -54,8 +38,24 @@ Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_1|divisor_de_clock:d
 Slack : 0.362
 TNS   : 0.000
 
+Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.362
+TNS   : 0.000
+
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.376
+Slack : 0.394
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
@@ -87,59 +87,59 @@ Slack : -1.000
 TNS   : -8.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -1.588
-TNS   : -47.136
-
-Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : -0.570
-TNS   : -2.902
-
-Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : -0.564
-TNS   : -2.850
-
-Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
-Slack : -0.508
-TNS   : -2.417
-
-Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : -0.507
-TNS   : -2.257
-
-Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
-Slack : -0.507
-TNS   : -2.237
+Slack : -1.650
+TNS   : -47.720
 
 Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.738
+TNS   : -2.975
+
+Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.589
+TNS   : -3.010
+
+Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.549
+TNS   : -2.786
+
+Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.507
+TNS   : -2.414
+
+Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : -0.506
-TNS   : -2.235
+TNS   : -2.259
+
+Type  : Slow 1200mV 0C Model Setup 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.505
+TNS   : -2.223
 
 Type  : Slow 1200mV 0C Model Hold 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : 0.320
+Slack : 0.321
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.320
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : 0.320
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : 0.320
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.320
+Slack : 0.321
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
 Slack : 0.321
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.322
+TNS   : 0.000
+
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.334
+Slack : 0.351
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
@@ -171,47 +171,35 @@ Slack : -1.000
 TNS   : -8.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.571
-TNS   : -15.550
+Slack : -0.619
+TNS   : -15.649
 
-Type  : Fast 1200mV 0C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : 0.008
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.082
+TNS   : -0.082
 
 Type  : Fast 1200mV 0C Model Setup 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : 0.016
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Fast 1200mV 0C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.021
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.046
+Slack : 0.048
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.049
+Slack : 0.048
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : 0.050
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.050
+Slack : 0.051
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : 0.189
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.193
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
-Slack : 0.193
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
-Slack : 0.194
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
@@ -219,16 +207,28 @@ Slack : 0.194
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
 Slack : 0.195
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.197
+Slack : 0.209
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -40.221
+TNS   : -40.113
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : -1.000

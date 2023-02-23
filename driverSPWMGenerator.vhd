@@ -36,10 +36,10 @@ architecture driverGen of driverSPWMGenerator is
 	
 	begin
 		
-		-- delay for phase 8 bit (120° = 85) integer 
+		-- delay for phase 8 bit (120° = 86) integer 
 		delayValue_1 <= (0);
 		delayValue_2 <= (85) when reverseEnable = '0' else (171); -- conditional statement for switching phase generation order
-		delayValue_3 <= (171) when reverseEnable = '0' else (85); -- conditional statement for switching phase generation order
+		delayValue_3 <= (170) when reverseEnable = '0' else (86); -- conditional statement for switching phase generation order
 	
 		--phase generator 1
 		phase_1 : SineWaveGenerator
