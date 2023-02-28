@@ -60,6 +60,14 @@ set_location_assignment PIN_AA19 -to pwm_output_3
 set_location_assignment PIN_AB17 -to not_pwm_output_1
 set_location_assignment PIN_AB18 -to not_pwm_output_2
 set_location_assignment PIN_AB19 -to not_pwm_output_3
+set_global_assignment -name VHDL_FILE SineWave.vhd
+set_global_assignment -name VHDL_FILE portadora.vhd
+set_global_assignment -name VHDL_FILE NotGate.vhd
+set_global_assignment -name VHDL_FILE Inversor.vhd
+set_global_assignment -name VHDL_FILE divisor_de_clock.vhd
+set_global_assignment -name VHDL_FILE contador.vhd
+set_global_assignment -name VHDL_FILE comparador.vhd
+set_global_assignment -name VHDL_FILE Atraso.vhd
 set_global_assignment -name VHDL_FILE SineWaveGenerator.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
@@ -73,6 +81,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform9.vwf
 set_global_assignment -name VHDL_FILE inverterGenerator.vhd
+set_global_assignment -name VHDL_FILE types_package.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

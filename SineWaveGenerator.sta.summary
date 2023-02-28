@@ -3,110 +3,1334 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -1.952
-TNS   : -53.904
+Slack : -2.367
+TNS   : -123.296
 
-Type  : Slow 1200mV 85C Model Setup 'divisor_de_clock:divisor_moduladora|o_clk'
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.952
+TNS   : -4.323
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.880
+TNS   : -4.523
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.838
+TNS   : -4.263
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.838
+TNS   : -4.263
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.831
+TNS   : -4.210
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.797
+TNS   : -3.775
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.780
+TNS   : -3.664
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.779
+TNS   : -3.658
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.779
+TNS   : -3.658
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.779
+TNS   : -3.657
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.779
+TNS   : -3.657
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.779
+TNS   : -3.657
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.778
+TNS   : -3.657
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.778
+TNS   : -3.653
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.777
+TNS   : -3.651
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.777
+TNS   : -3.647
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.776
+TNS   : -3.648
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.776
+TNS   : -3.648
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.776
+TNS   : -3.647
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.775
+TNS   : -3.645
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.775
+TNS   : -3.642
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.773
+TNS   : -3.634
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.745
+TNS   : -3.974
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.705
+TNS   : -3.376
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.704
+TNS   : -3.595
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.704
+TNS   : -3.595
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
 Slack : -0.704
 TNS   : -3.594
 
-Type  : Slow 1200mV 85C Model Setup 'divisor_de_clock:divisor_portadora|o_clk'
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
 Slack : -0.704
-TNS   : -3.593
+TNS   : -3.594
 
-Type  : Slow 1200mV 85C Model Hold 'divisor_de_clock:divisor_moduladora|o_clk'
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.704
+TNS   : -3.412
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.704
+TNS   : -3.387
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.704
+TNS   : -3.364
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.703
+TNS   : -3.588
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.702
+TNS   : -3.583
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.701
+TNS   : -3.419
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.701
+TNS   : -3.370
+
+Type  : Slow 1200mV 85C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.700
+TNS   : -3.579
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : 0.361
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'divisor_de_clock:divisor_portadora|o_clk'
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
 Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.385
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.362
+Slack : 0.494
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -34.000
+TNS   : -68.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor_de_clock:divisor_moduladora|o_clk'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : -1.000
 TNS   : -8.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor_de_clock:divisor_portadora|o_clk'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
 Slack : -1.000
 TNS   : -8.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -1.665
-TNS   : -45.799
+Slack : -2.014
+TNS   : -104.819
 
-Type  : Slow 1200mV 0C Model Setup 'divisor_de_clock:divisor_moduladora|o_clk'
-Slack : -0.509
-TNS   : -2.436
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.735
+TNS   : -3.041
 
-Type  : Slow 1200mV 0C Model Setup 'divisor_de_clock:divisor_portadora|o_clk'
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.678
+TNS   : -3.257
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.644
+TNS   : -3.030
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.643
+TNS   : -3.023
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.633
+TNS   : -2.966
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.590
+TNS   : -2.637
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.574
+TNS   : -2.544
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.574
+TNS   : -2.544
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.574
+TNS   : -2.544
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.574
+TNS   : -2.541
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.574
+TNS   : -2.541
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.573
+TNS   : -2.541
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.573
+TNS   : -2.541
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.573
+TNS   : -2.541
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.573
+TNS   : -2.538
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.572
+TNS   : -2.532
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.571
+TNS   : -2.532
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.571
+TNS   : -2.529
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.571
+TNS   : -2.526
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.570
+TNS   : -2.532
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.570
+TNS   : -2.523
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.568
+TNS   : -2.520
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.547
+TNS   : -2.759
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.511
+TNS   : -2.447
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.510
+TNS   : -2.448
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.510
+TNS   : -2.442
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.510
+TNS   : -2.438
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.510
+TNS   : -2.250
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
 Slack : -0.509
+TNS   : -2.442
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.509
+TNS   : -2.437
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.509
+TNS   : -2.278
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.509
+TNS   : -2.258
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.509
+TNS   : -2.233
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -0.508
 TNS   : -2.432
 
-Type  : Slow 1200mV 0C Model Hold 'clk'
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.506
+TNS   : -2.287
+
+Type  : Slow 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.506
+TNS   : -2.234
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : 0.320
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'divisor_de_clock:divisor_moduladora|o_clk'
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : 0.321
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'divisor_de_clock:divisor_portadora|o_clk'
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
 Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.437
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -34.000
+TNS   : -68.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:divisor_moduladora|o_clk'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : -1.000
 TNS   : -8.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:divisor_portadora|o_clk'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
 Slack : -1.000
 TNS   : -8.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.622
-TNS   : -15.969
+Slack : -0.904
+TNS   : -39.790
 
-Type  : Fast 1200mV 0C Model Setup 'divisor_de_clock:divisor_moduladora|o_clk'
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.081
+TNS   : -0.081
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.033
+TNS   : -0.033
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.013
+TNS   : -0.013
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.012
+TNS   : -0.012
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.014
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.014
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.014
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.041
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
 Slack : 0.042
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'divisor_de_clock:divisor_portadora|o_clk'
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
 Slack : 0.043
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'clk'
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.043
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.043
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.044
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.045
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : 0.189
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'divisor_de_clock:divisor_moduladora|o_clk'
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : 0.194
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'divisor_de_clock:divisor_portadora|o_clk'
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
 Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.269
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -35.974
+TNS   : -71.683
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:divisor_moduladora|o_clk'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
 Slack : -1.000
 TNS   : -8.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor_de_clock:divisor_portadora|o_clk'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:1:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:2:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:3:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:4:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:5:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_1|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_2|divisor_de_clock:divisor_portadora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_moduladora|o_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'driverSPWMGenerator:\driver_generator:6:driver_n|SineWaveGenerator:phase_3|divisor_de_clock:divisor_portadora|o_clk'
 Slack : -1.000
 TNS   : -8.000
 

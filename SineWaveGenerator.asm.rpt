@@ -1,5 +1,5 @@
 Assembler report for SineWaveGenerator
-Thu Feb 23 18:45:34 2023
+Tue Feb 28 15:27:47 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/SineWaveGenerator.sof
+  5. Assembler Device Options: C:/altera/SinusoidalPWM-generator-for-IGBT-based-inverter/SineWaveGenerator.sof
   6. Assembler Messages
 
 
@@ -37,9 +37,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Feb 23 18:45:34 2023 ;
+; Assembler Status      ; Successful - Tue Feb 28 15:27:47 2023 ;
 ; Revision Name         ; SineWaveGenerator                     ;
-; Top-level Entity Name ; SineWaveGenerator                     ;
+; Top-level Entity Name ; inverterGenerator                     ;
 ; Family                ; Cyclone III                           ;
 ; Device                ; EP3C16F484C6                          ;
 +-----------------------+---------------------------------------+
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                ;
-+------------------------------------------------------------------------------------------+
-; File Name                                                                                ;
-+------------------------------------------------------------------------------------------+
-; C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/SineWaveGenerator.sof ;
-+------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Assembler Generated Files                                                       ;
++---------------------------------------------------------------------------------+
+; File Name                                                                       ;
++---------------------------------------------------------------------------------+
+; C:/altera/SinusoidalPWM-generator-for-IGBT-based-inverter/SineWaveGenerator.sof ;
++---------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/altera/projects/SinusoidalPWM-generator-for-IGBT-based-inverter/SineWaveGenerator.sof ;
-+----------------+---------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                           ;
-+----------------+---------------------------------------------------------------------------------------------------+
-; Device         ; EP3C16F484C6                                                                                      ;
-; JTAG usercode  ; 0x000E7959                                                                                        ;
-; Checksum       ; 0x000E7959                                                                                        ;
-+----------------+---------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/altera/SinusoidalPWM-generator-for-IGBT-based-inverter/SineWaveGenerator.sof ;
++----------------+------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                  ;
++----------------+------------------------------------------------------------------------------------------+
+; Device         ; EP3C16F484C6                                                                             ;
+; JTAG usercode  ; 0x002B532E                                                                               ;
+; Checksum       ; 0x002B532E                                                                               ;
++----------------+------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Feb 23 18:45:32 2023
+    Info: Processing started: Tue Feb 28 15:27:45 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off SineWaveGenerator -c SineWaveGenerator
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4575 megabytes
-    Info: Processing ended: Thu Feb 23 18:45:34 2023
+    Info: Peak virtual memory: 4612 megabytes
+    Info: Processing ended: Tue Feb 28 15:27:47 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

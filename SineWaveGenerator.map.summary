@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Failed - Thu Feb 23 19:17:52 2023
+Analysis & Synthesis Status : Successful - Tue Feb 28 15:27:19 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : SineWaveGenerator
 Top-level Entity Name : inverterGenerator
 Family : Cyclone III
-Total logic elements : N/A until Partition Merge
-    Total combinational functions : N/A until Partition Merge
-    Dedicated logic registers : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total memory bits : N/A until Partition Merge
-Embedded Multiplier 9-bit elements : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
+Total logic elements : 3,780
+    Total combinational functions : 3,745
+    Dedicated logic registers : 353
+Total registers : 353
+Total pins : 128
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
